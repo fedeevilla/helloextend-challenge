@@ -1,0 +1,20 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.title {
+  text-align: left;
+}
+
+.spinner {
+  text-align: center;
+}
+
+.divider {
+  height: 1px;
+  background: #dadada;
+}

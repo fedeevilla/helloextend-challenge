@@ -1,0 +1,24 @@
+.image {
+  height: 250px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.item {
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
+
+.button-icon {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
