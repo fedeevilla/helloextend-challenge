@@ -7,13 +7,13 @@ import { api } from "./services/api";
 
 import "./App.css";
 
-const initialData = JSON.parse(localStorage.getItem("favoriteDogList") || "");
-
 function App() {
   const [text, setText] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [dogList, setDogList] = useState<string[]>([]);
-  const [favoriteDogList, setFavoriteDogList] = useState<string[]>(initialData);
+  const [favoriteDogList, setFavoriteDogList] = useState<string[]>(
+    JSON.parse(localStorage.getItem("favoriteDogList") || "[]")
+  );
 
   const handleSearch = async (ev: FormEvent<HTMLFormElement>) => {
     ev.preventDefault();
