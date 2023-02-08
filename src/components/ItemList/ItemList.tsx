@@ -3,6 +3,7 @@ import "./itemlist.css";
 
 interface Props {
   item: string;
+  // eslint-disable-next-line no-unused-vars
   onClick: (i: string) => void;
   isFilled: boolean;
 }

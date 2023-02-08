@@ -3,6 +3,7 @@ import "./list.css";
 
 interface ListProps {
   items: string[];
+  // eslint-disable-next-line no-unused-vars
   onClick: (i: string) => void;
   favoriteDogList: string[];
 }

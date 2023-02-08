@@ -1,9 +1,8 @@
-import { FormEvent } from "react";
 import "./searchbar.css";
 
 interface SearchBarProps {
   onChange: React.Dispatch<React.SetStateAction<string>>;
-  onSubmit: (ev: FormEvent<HTMLFormElement>) => void;
+  onSubmit: React.FormEventHandler<HTMLFormElement>;
 }
 
 const SearchBar = ({ onSubmit, onChange }: SearchBarProps) => (
